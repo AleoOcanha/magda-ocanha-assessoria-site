@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:wght@400;500&display=swap'); /* Importa as fontes Cinzel e EB Garamond */
+
+* {
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
+}
+
+:root {
+    --primary-color: #A34F5C; /* Terracota, Vinho Suave */
+    --secondary-color: #5C172E; /* Borgonha Profundo, Vinho Escuro */
+    --tertiary-color: #AF8F3C; /* Marrom-Dourado, Mostarda Escuro */
+    --bg-color: #fdf7fa; /* Cor de fundo (rosa claro) */
+}
+
+body {
+    margin: 0; /* Remove a margem padrão do body */
+    background: var(--bg-color); /* Define a cor de fundo usando uma variável */
+    color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
+    font-family: "EB Garamond", serif; /* Define a família da fonte para o corpo do texto */
+    min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+    position: relative;
+}
+
+header {
+    padding: 2rem 1rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
+    display: flex; /* Habilita o layout flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
+    top: 0; /* Posição do topo quando sticky */
+    background: var(--bg-color); /* Cor de fundo do cabeçalho */
+    z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */
+    border-bottom: 1px solid var(--secondary-color); /* Adiciona uma borda inferior */
+    gap: 1rem; /* Espaçamento entre os elementos flex */
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header .logo-container img {
+    height: 40px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    font-family: "Cinzel", serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons a {
+    color: var(--primary-color);
+    transition: color 0.2s ease;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
+}
+
+/* --- HERO SECTION (A Seção Principal do Site) --- */
+.hero-section {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--bg-color);
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.hero-title {
+    font-family: "Cinzel", serif;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-family: "EB Garamond", serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border-radius: 1rem;
+    font-family: "Cinzel", serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--bg-color);
+}
+
+.cta-primary {
+    background-color: var(--tertiary-color);
+}
+
+.cta-primary:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.cta-secondary {
+    background-color: var(--primary-color);
+}
+
+.cta-secondary:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* PLaceholders para o seu CSS, que não existiam no original, mas são necessários para o novo layout */
+main {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: "Cinzel", serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-title {
+    font-family: "Cinzel", serif;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+/* --- FOOTER --- */
+.footer {
+    padding: 3rem 1rem;
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: "Cinzel", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-logo span {
+    color: var(--tertiary-color);
+}
+
+.footer h4 {
+    font-family: "Cinzel", serif;
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--tertiary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.footer p, .footer-social a {
+    font-family: "EB Garamond", serif;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--bg-color);
+}
+
+.footer-social a {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: var(--tertiary-color);
+    transition: color 0.2s;
+}
+
+.footer-social a:hover {
+    color: var(--primary-color);
+}
+
+.footer-copy {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(253, 247, 250, 0.1); /* Cor mais clara do bg */
+    font-family: "EB Garamond", serif;
+    font-size: 0.8rem;
+    color: rgba(253, 247, 250, 0.7);
+}
+
+
+/* --- Responsividade (Media Queries) --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    header nav {
+        margin-top: 1rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        display: block;
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer h4 {
+        border-bottom: none;
+    }
+
+    .logo {
+    width: 12vw;  /* 12% da largura da viewport - aumenta 50% em telas médias */
+    height: auto;
+    max-width: 180px;
+    min-width: 100px;
+}
+}
