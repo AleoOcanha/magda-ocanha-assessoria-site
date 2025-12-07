@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGDA OCANHA ASSESSORIA</title>
+        
+    <!-- LINK PARA O ARQUIVO CSS EXTERNO (style.css) -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Ícones do Font Awesome (Mantido) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- 1. Seção Superior (Cabeçalho) -->
+    <header>
+        
+       <!-- Logo Secundário (Canto superior esquerdo) -->
+<div class="logo-container">
+    <a href="index.html">
+        <!-- Imagem do Logo na pasta imagens -->
+        <img src="imagens/Logo_nome.png" 
+             alt="Magda Ocanha Assessoria" 
+             class="logo"
+             style="width: 260px; height: auto;">
+    </a>
+</div>
+
+        <!-- Menu de Navegação (Centralizado, espaçado) -->
+        <nav>
+            <a href="#hero">INÍCIO</a>
+            <a href="#portfolio">SEU GRANDE MOMENTO</a>
+            <a href="#servicos">TIPOS DE ASSESSORIAS</a>
+            <a href="#depoimentos">FEEDBACKS</a>
+            <a href="#contato">CONTATO</a>
+        </nav>
+
+        <!-- Ícones de Redes Sociais (Canto superior direito) -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/magdaocanhaassessoria/#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5511940582582?text=Ol%C3%A1!" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        
+    </header>
+
+    <!-- 2. Hero Section (Primeira Dobra) -->
+    <!-- Adicionada classe 'hero-section' para estilização com CSS externo -->
+    <section id="hero" class="hero-section" 
+         style="background-image: url('imagens/Casamento_1.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;">
+        
+        <div class="absolute inset-0" style="background-color: rgba(92, 23, 46, 0.5);"></div> <!-- Sobreposição Semitransparente -->
+
+        <!-- Conteúdo Principal da Hero Section -->
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Celebre a Vida, Nós Cuidamos dos Detalhes.
+            </h1>
+            <p class="hero-subtitle">
+                Sua assessoria de eventos completa e personalizada
+            </p>
+            
+            <!-- Botões CTA - Usando novas classes do CSS externo -->
+            <div class="cta-group">
+                <a href="#portfolio" class="cta-button cta-primary">
+                    Sinta a emoção
+                </a>
+                <a href="#contato" class="cta-button cta-secondary">
+                    Agendar Consulta
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Seção "Destaques do Nosso Portfólio" -->
+    <!-- Main foi adicionado para envolver as seções de conteúdo -->
+    <main>
+        <section id="portfolio">
+            
+            <h2 class="section-title">
+                Momentos Inesquecíveis
+            </h2>
+
+            <!-- Grade de Miniaturas - Usando nova classe 'grid-container' -->
+            <div class="grid-container">
+                
+                <!-- Destaque 1: Casamento - Usando nova classe 'card' -->
+                <div class="card">
+                    <img src="imagens/casamento_2.jpg" alt="Dia do Sim">
+                    <div class="card-content">
+                        <h3 class="card-title">Casamento dos Sonhos</h3>
+                        <p class="card-subtitle">Planejamento e Execução Completa.</p>
+                    </div>
+                </div>
+
+                <!-- Destaque 2: Debutante -->
+                <div class="card">
+                    <img src="imagens/debutante_1.jpg" alt="Festa de 15 Anos">
+                    <div class="card-content">
+                        <h3 class="card-title">Debutante</h3>
+                        <p class="card-subtitle">Celebração de 15 Anos Inesquecível.</p>
+                    </div>
+                </div>
+
+                <!-- Destaque 3: Corporativo -->
+                <div class="card">
+                    <img src="imagens/confraternizacao_1.jpg" alt="Promovendo seu negócio">
+                    <div class="card-content">
+                        <h3 class="card-title">Eventos corporativos</h3>
+                        <p class="card-subtitle">Sua empresa celebra, sua marca cresce.</p>
+                    </div>
+                </div>
+                
+                <!-- Destaque 4: Aniversário -->
+                <div class="card">
+                    <img src="imagens/aniversario_1.jpg" alt="Aniversário de 50 Anos">
+                    <div class="card-content">
+                        <h3 class="card-title">Aniversário Temático</h3>
+                        <p class="card-subtitle">Festas Personalizadas para todas as idades.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="servicos" style="margin-top: 4rem;">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="grid-container">
+                <div class="card" style="border-top: 4px solid var(--tertiary-color);">
+                    <div class="card-content">
+                        <i class="fas fa-heart" style="font-size: 2rem; color: var(--tertiary-color); margin-bottom: 0.5rem;"></i>
+                        <h3 class="card-title">Assessoria Completa</h3>
+                        <p class="card-subtitle">Planejamento 360°, desde a concepção do tema até a execução pós-evento.</p>
+                    </div>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--primary-color);">
+                    <div class="card-content">
+                        <i class="fas fa-calendar-check" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 0.5rem;"></i>
+                        <h3 class="card-title">Coordenação do Dia</h3>
+                        <p class="card-subtitle">Gerenciamento total de fornecedores e cronograma no dia da celebração.</p>
+                    </div>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--secondary-color);">
+                    <div class="card-content">
+                        <i class="fas fa-laptop-code" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 0.5rem;"></i>
+                        <h3 class="card-title">Consultoria Personalizada</h3>
+                        <p class="card-subtitle">Apoio estratégico para orçamentos, contratos e definição de estilo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Seção "O Que Dizem Nossos Clientes" (Depoimentos) - Apenas o conteúdo estático foi mantido para não depender de JS/Carrossel por agora -->
+        <section id="depoimentos" style="margin-top: 4rem; text-align: center;">
+            <h2 class="section-title">Experiências Compartilhadas</h2>
+            <div style="background-color: var(--tertiary-color); padding: 3rem; border-radius: 1rem; color: var(--secondary-color);">
+                 <!-- Exemplo de Depoimento Fixo -->
+                <img src="https://placehold.co/80x80/A34F5C/fdf7fa?text=J.A." alt="Foto da Cliente" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--bg-color);">
+                <blockquote style="font-size: 1.2rem; font-style: italic; margin-bottom: 1rem; line-height: 1.6; color: var(--secondary-color);">
+                    "A equipe transformou o nosso sonho em realidade de uma forma que nem imaginávamos. Cuidado em cada detalhe, do início ao fim. Profissionais incríveis!"
+                </blockquote>
+                <cite style="font-family: 'Cinzel', serif; font-size: 1rem; font-weight: 600; font-style: normal; color: var(--secondary-color);">- Juliana Albuquerque (Noiva)</cite>
+            </div>
+        </section>
+        
+    </main>
+
+
+    <!-- 5. Rodapé -->
+    <footer id="contato" class="footer">
+        <div class="footer-content">
+            
+            <!-- Logo -->
+            <div class="footer-item">
+                <div class="footer-logo">
+                    <img src="imagens/Logo_sem_fundo.png" alt="Magda Ocanha Assessoria"
+                    style="width: 260px; height: auto;">
+                </div>
+            </div>
+
+            <!-- Contato -->
+            <div class="footer-item">
+                <h4>Fale Conosco</h4>
+                <p><i class="fas fa-phone mr-2" style="color: var(--tertiary-color);"></i> (11) 940582582</p>
+                <p><i class="fas fa-envelope mr-2" style="color: var(--tertiary-color);"></i> magdas.ocanha@gmail.com</p>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="footer-item">
+                <h4>Siga-nos</h4>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/magdaocanhaassessoria/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/MagdaOcanhaAssessoria/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/5511940582582?text=Ol%C3%A1!" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copy">
+            <p>&copy; 2025 Magda Ocanha Assessoria. Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+
+
+    <script>
+        // REMOÇÃO: Lógica de Slideshow e Carrossel foi removida pois dependia de classes Tailwind e estruturas que seu CSS não contempla, 
+        // e o objetivo é refatorar para usar o style.css
+    </script>
+</body>
+</html>
